@@ -26,7 +26,7 @@ const NavButton = ({title, customFunc, icon, color, dotColor}) =>(
     const handleResize = () => setScreenSize(window.innerWidth)
     window.addEventListener('resize', handleResize);
     handleResize();
-    return () => window.removeEventListener('reize', jandleResize);
+    return () => window.removeEventListener('resize', handleResize);
   },[]);
 
   useEffect (() => {
